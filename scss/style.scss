@@ -20,11 +20,6 @@ p, ul, ol, dl, pre, code, blockquote { font-size: 1em; }
 li { margin-bottom: .75%; }
 small, aside { font-size: 0.75em; }
 
-/*
-#F7DE1E: Yellow      $color-1: #F7DE1E;
-*/
-
-//$color: #F7DE1E;
 $color: invert(#F7DE1E);
 
 body {
@@ -50,11 +45,15 @@ p {
   margin-right: 1rem;
 }
 
+img {
+  max-width: calc(100% - 2rem);
+}
+
 header, footer {
   font-family: "Monda", sans-serif;
   text-align: center;
   color: mix(invert($color), white, 50%);
-  background-color: mix(invert(#F7DE1E), white, 70%);
+  background-color: mix($color, white, 70%);
   background-image: url("gplay.png");
   padding: 1rem;
   border-top: solid mix($color, black, 50%) thick;
@@ -65,24 +64,32 @@ header, footer {
   }
 }
 
-main {
-  display: flex;
-}
-
-div.flex-wrapper {
-  flex: 4;
-  padding-bottom: 1rem;
-}
-
 nav {
   font-size: 85%;
-  padding: .5rem;
+  padding: 1rem;
   background-image: url("hexellence.png");
-  background-color: #F7DE1E;
-  overflow: auto;
-  border-right: solid mix($color, black, 50%) thick;
-  flex: 1 1 5rem;
-  align-items: stretch;
+  background-color: invert($color);
+  border-bottom: solid mix($color, black, 50%) thick;
+
+  ul {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  li {
+    display: inline;
+    background-color: mix(invert($color), white, 40%);
+    border: solid 1px mix($color, black, 50%);
+    margin: 0.5rem;
+    padding: 0.5rem;
+
+    a {
+    color: mix($color, black, 25%);
+    }
+
+  }
+
 }
 
 ul {
@@ -111,23 +118,6 @@ dt:first-child {
 
 dd {
   margin-bottom: 0.25em;
-}
-
-nav ul {
-  margin: 0;
-  padding: 0;
-}
-
-nav li {
-  float: left;
-  background-color: mix(invert($color), white, 40%);
-  border: solid 1px mix($color, black, 50%);
-  margin: 0.5rem;
-  padding: 0.5rem;
-}
-
-nav a {
-  color: mix($color, black, 25%);
 }
 
 .note {
