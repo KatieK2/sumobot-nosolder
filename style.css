@@ -1,0 +1,259 @@
+/* html5doctor.com Reset Stylesheet */
+/* line 2, scss/style.scss */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, code, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* line 3, scss/style.scss */
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+/* line 4, scss/style.scss */
+body {
+  line-height: 1.5;
+}
+
+/* line 5, scss/style.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 6, scss/style.scss */
+nav ul {
+  list-style: none;
+}
+
+/* line 7, scss/style.scss */
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* line 8, scss/style.scss */
+ins {
+  background-color: rgba(255, 255, 255, 0.4);
+  text-decoration: none;
+}
+
+/* line 9, scss/style.scss */
+mark {
+  background-color: rgba(255, 255, 255, 0.4);
+  font-style: inherit;
+  font-weight: bold;
+}
+
+/* line 10, scss/style.scss */
+del {
+  text-decoration: line-through;
+}
+
+/* line 11, scss/style.scss */
+em {
+  font-style: italic;
+}
+
+/* line 12, scss/style.scss */
+strong {
+  font-weight: bold;
+}
+
+/* line 13, scss/style.scss */
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+/* line 14, scss/style.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 15, scss/style.scss */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px dashed white;
+  width: 80%;
+  margin: 1em auto;
+  padding: 0;
+}
+
+/* line 16, scss/style.scss */
+input, select {
+  vertical-align: middle;
+}
+
+/* line 17, scss/style.scss */
+h1 {
+  font-size: 2em;
+  line-height: 100%;
+  margin-top: .5em;
+  margin-bottom: .5em;
+}
+
+/* line 18, scss/style.scss */
+h2 {
+  font-size: 1.1667em;
+  line-height: 128.6%;
+  margin-top: 1.143em;
+}
+
+/* line 19, scss/style.scss */
+p, ul, ol, dl, pre, code, blockquote {
+  font-size: 1em;
+}
+
+/* line 20, scss/style.scss */
+li {
+  margin-bottom: .75%;
+}
+
+/* line 21, scss/style.scss */
+small, aside {
+  font-size: 0.75em;
+}
+
+/*
+#F7DE1E: Yellow      $color-1: #F7DE1E;
+*/
+/* line 30, scss/style.scss */
+body {
+  color: #000316;
+  background-color: #c1c7f7;
+  background-image: url("gplay.png");
+  font: 16px/1.6em "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* line 37, scss/style.scss */
+h1, h2, h3, h4, h5, h6 {
+  color: #020838;
+  font-weight: bold;
+  font-family: "Monda", sans-serif;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+/* line 45, scss/style.scss */
+header, footer {
+  background-color: #5263ea;
+  background-image: url("gplay.png");
+  font-family: "Monda", sans-serif;
+  text-align: center;
+  padding: 1rem;
+  border-top: solid #041070 thick;
+  border-bottom: solid #041070 thick;
+}
+/* line 54, scss/style.scss */
+header a, footer a {
+  color: white;
+}
+
+/* line 59, scss/style.scss */
+main {
+  display: flex;
+}
+
+/* line 63, scss/style.scss */
+div.flex-wrapper {
+  flex: 4;
+  padding-bottom: 1rem;
+}
+
+/* line 68, scss/style.scss */
+nav {
+  font-size: 85%;
+  padding: .5rem;
+  background-image: url("hexellence.png");
+  background-color: #F7DE1E;
+  overflow: auto;
+  border-right: solid #041070 thick;
+  flex: 1 1 10rem;
+  align-items: stretch;
+}
+
+/* line 79, scss/style.scss */
+ul {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  padding-left: 1rem;
+}
+
+/* line 84, scss/style.scss */
+ol {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  padding-left: 1.7rem;
+}
+
+/* line 89, scss/style.scss */
+p {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+/* line 93, scss/style.scss */
+a {
+  color: #b4061a;
+}
+
+/* line 97, scss/style.scss */
+dt {
+  border-top: dashed white thin;
+  padding-top: .35em;
+  margin-top: .25em;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+/* line 104, scss/style.scss */
+dt:first-child {
+  border-top: none;
+}
+
+/* line 107, scss/style.scss */
+dd {
+  margin-bottom: 0.25em;
+}
+
+/* line 111, scss/style.scss */
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 115, scss/style.scss */
+nav li {
+  float: left;
+  background-color: #fbf1a5;
+  border: solid 1px #041070;
+  margin: 0.5rem;
+  padding: 0.5rem;
+}
+
+/* line 122, scss/style.scss */
+nav a {
+  color: #020838;
+}
+
+/* line 125, scss/style.scss */
+.note {
+  float: right;
+  width: 45%;
+  border: thin solid #000;
+  background-color: #FCF4B2;
+  padding: .5rem;
+  font-size: small;
+}

@@ -1,0 +1,132 @@
+/* html5doctor.com Reset Stylesheet */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, code, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; outline: 0; font-size: 100%; vertical-align: baseline; background: transparent; }
+html { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+body { line-height: 1.5; }
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+nav ul { list-style: none; }
+a { margin: 0; padding: 0; font-size: 100%; vertical-align: baseline; background: transparent; }
+ins { background-color: rgba(255, 255, 255, 0.4); text-decoration: none; }
+mark { background-color: rgba(255, 255, 255, 0.4); font-style: inherit; font-weight: bold; }
+del { text-decoration: line-through; }
+em { font-style: italic; }
+strong { font-weight: bold; }
+abbr[title], dfn[title] { border-bottom: 1px dotted; cursor: help; }
+table { border-collapse: collapse; border-spacing: 0; }
+hr { display: block; height: 1px; border: 0; border-top: 1px dashed white; width: 80%; margin: 1em auto; padding: 0; }
+input, select { vertical-align: middle; }
+h1 { font-size: 2em; line-height: 100%; margin-top: .5em; margin-bottom: .5em; }
+h2 { font-size: 1.1667em; line-height: 128.6%; margin-top: 1.143em; }
+p, ul, ol, dl, pre, code, blockquote { font-size: 1em; }
+li { margin-bottom: .75%; }
+small, aside { font-size: 0.75em; }
+
+/*
+#F7DE1E: Yellow      $color-1: #F7DE1E;
+*/
+
+//$color: #F7DE1E;
+$color: invert(#F7DE1E);
+
+body {
+  color: mix($color, black, 10%);
+  background-color: mix($color, white, 25%);
+  background-image: url("gplay.png");
+  font: 16px/1.6em "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: mix($color, black, 25%);
+  font-weight: bold;
+  font-family: "Monda", sans-serif;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+header, footer {
+  background-color: mix(invert(#F7DE1E), white, 70%);
+  background-image: url("gplay.png");
+  font-family: "Monda", sans-serif;
+  text-align: center;
+  padding: 1rem;
+  border-top: solid mix($color, black, 50%) thick;
+  border-bottom: solid mix($color, black, 50%) thick;
+
+  a {
+    color: white;
+  }
+}
+
+main {
+  display: flex;
+}
+
+div.flex-wrapper {
+  flex: 4;
+  padding-bottom: 1rem;
+}
+
+nav {
+  font-size: 85%;
+  padding: .5rem;
+  background-image: url("hexellence.png");
+  background-color: #F7DE1E;
+  overflow: auto;
+  border-right: solid mix($color, black, 50%) thick;
+  flex: 1 1 10rem;
+  align-items: stretch;
+}
+
+ul {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  padding-left: 1rem;
+}
+ol {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  padding-left: 1.7rem;
+}
+p {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+a {
+  color: mix(adjust_hue($color, 120), black, 80%);
+}
+
+dt {
+  border-top: dashed white thin;
+  padding-top: .35em;
+  margin-top: .25em;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+dt:first-child {
+  border-top: none;
+}
+dd {
+  margin-bottom: 0.25em;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+nav li {
+  float: left;
+  background-color: mix(invert($color), white, 40%);
+  border: solid 1px mix($color, black, 50%);
+  margin: 0.5rem;
+  padding: 0.5rem;
+}
+nav a {
+  color: mix($color, black, 25%);
+}
+.note {
+  float: right;
+  width: 45%;
+  border: thin solid #000;
+  background-color: #FCF4B2;
+  padding: .5rem;
+  font-size: small;
+}
