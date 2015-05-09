@@ -29,8 +29,7 @@ $color: invert(#F7DE1E);
 
 body {
   color: mix($color, black, 10%);
-  background-color: mix($color, white, 25%);
-  background-image: url("gplay.png");
+  background-color: desaturate(mix($color, white, 50%), 50%);
   font: 16px/1.6em "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
@@ -42,17 +41,27 @@ h1, h2, h3, h4, h5, h6 {
   margin-right: 1rem;
 }
 
+a {
+  color: mix(adjust_hue($color, 120), black, 60%);
+}
+
+p {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
 header, footer {
-  background-color: mix(invert(#F7DE1E), white, 70%);
-  background-image: url("gplay.png");
   font-family: "Monda", sans-serif;
   text-align: center;
+  color: mix(invert($color), white, 50%);
+  background-color: mix(invert(#F7DE1E), white, 70%);
+  background-image: url("gplay.png");
   padding: 1rem;
   border-top: solid mix($color, black, 50%) thick;
   border-bottom: solid mix($color, black, 50%) thick;
 
   a {
-    color: white;
+    color: inherit;
   }
 }
 
@@ -72,7 +81,7 @@ nav {
   background-color: #F7DE1E;
   overflow: auto;
   border-right: solid mix($color, black, 50%) thick;
-  flex: 1 1 10rem;
+  flex: 1 1 5rem;
   align-items: stretch;
 }
 
@@ -81,17 +90,11 @@ ul {
   margin-right: 1rem;
   padding-left: 1rem;
 }
+
 ol {
   margin-left: 1rem;
   margin-right: 1rem;
   padding-left: 1.7rem;
-}
-p {
-  margin-left: 1rem;
-  margin-right: 1rem;
-}
-a {
-  color: mix(adjust_hue($color, 120), black, 80%);
 }
 
 dt {
@@ -101,9 +104,11 @@ dt {
   margin-left: 1rem;
   margin-right: 1rem;
 }
+
 dt:first-child {
   border-top: none;
 }
+
 dd {
   margin-bottom: 0.25em;
 }
@@ -112,6 +117,7 @@ nav ul {
   margin: 0;
   padding: 0;
 }
+
 nav li {
   float: left;
   background-color: mix(invert($color), white, 40%);
@@ -119,14 +125,16 @@ nav li {
   margin: 0.5rem;
   padding: 0.5rem;
 }
+
 nav a {
   color: mix($color, black, 25%);
 }
+
 .note {
   float: right;
   width: 45%;
   border: thin solid #000;
-  background-color: #FCF4B2;
+  background-color: desaturate(mix($color, white, 30%), 50%);
   padding: .5rem;
   font-size: small;
 }
