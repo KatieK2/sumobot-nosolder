@@ -47,6 +47,7 @@ p {
 
 img {
   max-width: calc(100% - 2rem);
+  max-width: calc(60% - 2rem);
 }
 
 header, footer {
@@ -92,15 +93,20 @@ nav {
 
 }
 
-ul {
+ul, ol, dt {
   margin-left: 1rem;
   margin-right: 1rem;
+  p {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+ul {
   padding-left: 1rem;
 }
 
 ol {
-  margin-left: 1rem;
-  margin-right: 1rem;
   padding-left: 1.7rem;
 }
 
@@ -108,8 +114,6 @@ dt {
   border-top: dashed white thin;
   padding-top: .35em;
   margin-top: .25em;
-  margin-left: 1rem;
-  margin-right: 1rem;
 }
 
 dt:first-child {
