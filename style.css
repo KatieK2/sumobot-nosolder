@@ -126,17 +126,14 @@ small, aside {
   font-size: 0.75em;
 }
 
-/*
-#F7DE1E: Yellow      $color-1: #F7DE1E;
-*/
-/* line 30, scss/style.scss */
+/* line 25, scss/style.scss */
 body {
   color: #000316;
   background-color: #a6aacd;
   font: 16px/1.6em "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-/* line 36, scss/style.scss */
+/* line 31, scss/style.scss */
 h1, h2, h3, h4, h5, h6 {
   color: #020838;
   font-weight: bold;
@@ -145,18 +142,23 @@ h1, h2, h3, h4, h5, h6 {
   margin-right: 1rem;
 }
 
-/* line 44, scss/style.scss */
+/* line 39, scss/style.scss */
 a {
   color: #870413;
 }
 
-/* line 48, scss/style.scss */
+/* line 43, scss/style.scss */
 p {
   margin-left: 1rem;
   margin-right: 1rem;
 }
 
-/* line 53, scss/style.scss */
+/* line 48, scss/style.scss */
+img {
+  max-width: calc(100% - 2rem);
+}
+
+/* line 52, scss/style.scss */
 header, footer {
   font-family: "Monda", sans-serif;
   text-align: center;
@@ -167,49 +169,53 @@ header, footer {
   border-top: solid #041070 thick;
   border-bottom: solid #041070 thick;
 }
-/* line 63, scss/style.scss */
+/* line 62, scss/style.scss */
 header a, footer a {
   color: inherit;
 }
 
-/* line 68, scss/style.scss */
-main {
-  display: flex;
-}
-
-/* line 72, scss/style.scss */
-div.flex-wrapper {
-  flex: 4;
-  padding-bottom: 1rem;
-}
-
-/* line 77, scss/style.scss */
+/* line 67, scss/style.scss */
 nav {
   font-size: 85%;
-  padding: .5rem;
+  padding: 1rem;
   background-image: url("hexellence.png");
-  background-color: #F7DE1E;
-  overflow: auto;
-  border-right: solid #041070 thick;
-  flex: 1 1 5rem;
-  align-items: stretch;
+  background-color: #f7de1e;
+  border-bottom: solid #041070 thick;
+}
+/* line 74, scss/style.scss */
+nav ul {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+/* line 80, scss/style.scss */
+nav li {
+  display: inline;
+  background-color: #fbf1a5;
+  border: solid 1px #041070;
+  margin: 0.5rem;
+  padding: 0.5rem;
+}
+/* line 87, scss/style.scss */
+nav li a {
+  color: #020838;
 }
 
-/* line 88, scss/style.scss */
+/* line 95, scss/style.scss */
 ul {
   margin-left: 1rem;
   margin-right: 1rem;
   padding-left: 1rem;
 }
 
-/* line 94, scss/style.scss */
+/* line 101, scss/style.scss */
 ol {
   margin-left: 1rem;
   margin-right: 1rem;
   padding-left: 1.7rem;
 }
 
-/* line 100, scss/style.scss */
+/* line 107, scss/style.scss */
 dt {
   border-top: dashed white thin;
   padding-top: .35em;
@@ -218,37 +224,17 @@ dt {
   margin-right: 1rem;
 }
 
-/* line 108, scss/style.scss */
+/* line 115, scss/style.scss */
 dt:first-child {
   border-top: none;
 }
 
-/* line 112, scss/style.scss */
+/* line 119, scss/style.scss */
 dd {
   margin-bottom: 0.25em;
 }
 
-/* line 116, scss/style.scss */
-nav ul {
-  margin: 0;
-  padding: 0;
-}
-
-/* line 121, scss/style.scss */
-nav li {
-  float: left;
-  background-color: #fbf1a5;
-  border: solid 1px #041070;
-  margin: 0.5rem;
-  padding: 0.5rem;
-}
-
-/* line 129, scss/style.scss */
-nav a {
-  color: #020838;
-}
-
-/* line 133, scss/style.scss */
+/* line 123, scss/style.scss */
 .note {
   float: right;
   width: 45%;
