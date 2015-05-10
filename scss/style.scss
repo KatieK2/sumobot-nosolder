@@ -55,7 +55,7 @@ header, footer {
   color: mix(invert($color), white, 50%);
   background-color: mix($color, white, 70%);
   background-image: url("gplay.png");
-  padding: 1rem;
+  padding: .5rem;
   border-top: solid mix($color, black, 50%) thick;
   border-bottom: solid mix($color, black, 50%) thick;
 

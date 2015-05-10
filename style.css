@@ -165,7 +165,7 @@ header, footer {
   color: #fbee8e;
   background-color: #5263ea;
   background-image: url("gplay.png");
-  padding: 1rem;
+  padding: .5rem;
   border-top: solid #041070 thick;
   border-bottom: solid #041070 thick;
 }
