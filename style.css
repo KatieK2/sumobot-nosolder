@@ -156,10 +156,9 @@ p {
 /* line 48, scss/style.scss */
 img {
   max-width: calc(100% - 2rem);
-  max-width: calc(60% - 2rem);
 }
 
-/* line 53, scss/style.scss */
+/* line 52, scss/style.scss */
 header, footer {
   font-family: "Monda", sans-serif;
   text-align: center;
@@ -170,12 +169,12 @@ header, footer {
   border-top: solid #041070 thick;
   border-bottom: solid #041070 thick;
 }
-/* line 63, scss/style.scss */
+/* line 62, scss/style.scss */
 header a, footer a {
   color: inherit;
 }
 
-/* line 68, scss/style.scss */
+/* line 67, scss/style.scss */
 nav {
   font-size: 85%;
   padding: 1rem;
@@ -183,13 +182,13 @@ nav {
   background-color: #f7de1e;
   border-bottom: solid #041070 thick;
 }
-/* line 75, scss/style.scss */
+/* line 74, scss/style.scss */
 nav ul {
   margin: 0;
   padding: 0;
   text-align: center;
 }
-/* line 81, scss/style.scss */
+/* line 80, scss/style.scss */
 nav li {
   display: inline;
   background-color: #fbf1a5;
@@ -197,50 +196,55 @@ nav li {
   margin: 0.5rem;
   padding: 0.5rem;
 }
-/* line 88, scss/style.scss */
+/* line 87, scss/style.scss */
 nav li a {
   color: #020838;
 }
 
-/* line 96, scss/style.scss */
+/* line 95, scss/style.scss */
 ul, ol, dt {
   margin-left: 1rem;
   margin-right: 1rem;
 }
-/* line 99, scss/style.scss */
+/* line 98, scss/style.scss */
 ul p, ol p, dt p {
   margin-left: 0;
   margin-right: 0;
 }
 
-/* line 105, scss/style.scss */
+/* line 104, scss/style.scss */
 ul {
   padding-left: 1rem;
 }
 
-/* line 109, scss/style.scss */
+/* line 108, scss/style.scss */
 ol {
   padding-left: 1.7rem;
+  max-width: 50rem;
+}
+/* line 111, scss/style.scss */
+ol li {
+  margin-bottom: 2rem;
 }
 
-/* line 113, scss/style.scss */
+/* line 116, scss/style.scss */
 dt {
   border-top: dashed white thin;
   padding-top: .35em;
   margin-top: .25em;
 }
 
-/* line 119, scss/style.scss */
+/* line 122, scss/style.scss */
 dt:first-child {
   border-top: none;
 }
 
-/* line 123, scss/style.scss */
+/* line 126, scss/style.scss */
 dd {
   margin-bottom: 0.25em;
 }
 
-/* line 127, scss/style.scss */
+/* line 130, scss/style.scss */
 .note {
   float: right;
   width: 45%;
