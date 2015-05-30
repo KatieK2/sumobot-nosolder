@@ -117,23 +117,18 @@ p, ul, ol, dl, pre, code, blockquote {
 }
 
 /* line 20, scss/style.scss */
-li {
-  margin-bottom: .75%;
-}
-
-/* line 21, scss/style.scss */
 small, aside {
   font-size: 0.75em;
 }
 
-/* line 25, scss/style.scss */
+/* line 24, scss/style.scss */
 body {
   color: #000316;
-  background-color: #a6aacd;
+  background-color: #eaebf8;
   font: 16px/1.6em "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-/* line 31, scss/style.scss */
+/* line 30, scss/style.scss */
 h1, h2, h3, h4, h5, h6 {
   color: #020838;
   font-weight: bold;
@@ -142,20 +137,21 @@ h1, h2, h3, h4, h5, h6 {
   margin-right: 1rem;
 }
 
-/* line 39, scss/style.scss */
+/* line 38, scss/style.scss */
 a {
   color: #870413;
 }
 
-/* line 43, scss/style.scss */
+/* line 42, scss/style.scss */
 p {
   margin-left: 1rem;
   margin-right: 1rem;
 }
 
-/* line 48, scss/style.scss */
+/* line 47, scss/style.scss */
 img {
   max-width: calc(100% - 2rem);
+  border: solid white thin;
 }
 
 /* line 52, scss/style.scss */
@@ -245,6 +241,18 @@ dd {
 }
 
 /* line 130, scss/style.scss */
+ul.img-trio {
+  list-style-type: none;
+  padding: 0;
+  overflow: auto;
+}
+/* line 134, scss/style.scss */
+ul.img-trio li {
+  width: 32%;
+  float: left;
+}
+
+/* line 140, scss/style.scss */
 .note {
   float: right;
   width: 45%;

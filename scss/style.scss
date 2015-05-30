@@ -17,14 +17,13 @@ input, select { vertical-align: middle; }
 h1 { font-size: 2em; line-height: 100%; margin-top: .5em; margin-bottom: .5em; }
 h2 { font-size: 1.1667em; line-height: 128.6%; margin-top: 1.143em; }
 p, ul, ol, dl, pre, code, blockquote { font-size: 1em; }
-li { margin-bottom: .75%; }
 small, aside { font-size: 0.75em; }
 
 $color: invert(#F7DE1E);
 
 body {
   color: mix($color, black, 10%);
-  background-color: desaturate(mix($color, white, 50%), 50%);
+  background-color: desaturate(mix($color, white, 10%), 30%);
   font: 16px/1.6em "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
@@ -47,6 +46,7 @@ p {
 
 img {
   max-width: calc(100% - 2rem);
+  border: solid white thin;
 }
 
 header, footer {
@@ -125,6 +125,16 @@ dt:first-child {
 
 dd {
   margin-bottom: 0.25em;
+}
+
+ul.img-trio {
+  list-style-type: none;
+  padding: 0;
+  overflow: auto;
+  li {
+    width: 32%;
+    float: left;
+  }
 }
 
 .note {
