@@ -33,7 +33,7 @@
     </nav>
 
       <h2 id="intro">Intro</h2>
-      <p>These instructions will help you build a Sumobot Jr. Here are some photos of a completed bot, cut from yellow plastic. (Later photos show the but chassis cut from plywood, but are otherwise the same.)</p>
+      <p>These instructions will help you build a Sumobot Jr. Here are some photos of a completed bot. (This bot is slightly different from the one in the construction photos - it's cut from acrylic and has soldered leads from the motors.)</p>
       <ul class="img-trio">
         <li><a href="images/2015-05-23 14.52.52.jpg"><img src="images/2015-05-23 14.52.52.jpg" alt="Sumobot JR in plastic - Side View"></a></li>
         <li><a href="images/2015-05-23 14.52.30.jpg"><img src="images/2015-05-23 14.52.30.jpg" alt="Sumobot JR in plastic - Top View"></a></li>
@@ -50,28 +50,33 @@
         </li>
         <li>Arduino software! <a href="http://arduino.cc/en/main/software">http://arduino.cc/en/main/software</a></li>
         <li>Johnny Five</li>
-        <li>Sumobot</li>
+        <li><a href="https://github.com/makenai/sumobot-jr#sample-code">Sumobot</a></li>
       </ul>
 
       <h2 id="hardware">Hardware</h2>
+
+      <div class="tips" style="float: right; background-color: white; margin-right: 1rem;">
+        
+        <p>Tips:</p>
+        <ul>
+          <li>You don't need to spend lots of money prototyping. Use cardboard, coroplast (lawn signs), Popsicle sticks and duct tape.</li>
+          <li>Use a medium to large screwdriver with a nice grip for more torque. (Those servo horns will be tough with a pen-sized screwdriver.)</li>
+          <li>Protect your work surface and add a bit of grip by working on cardboard or a rubber mat.</li>
+        </ul>
+        
+      </div>
+
       <ul>
         <li><a href="http://sumobotkit.com/">Sumobot Jr</a></li>
         <li>LaserCut and 3D patterns from <a href="https://github.com/makenai/sumobot-jr">https://github.com/makenai/sumobot-jr</a></li>
         <li>Other parts from <a href="https://github.com/makenai/sumobot-jr#other-parts-needed">https://github.com/makenai/sumobot-jr#other-parts-needed</a></li>
         <li>Assembly video <a href="http://sumobotkit.com/">http://sumobotkit.com/</a></li>
         <li>6x #4 x 1/4" wood screws - 2 for each wheel and 2 for the ball caster. Wider threads are self tapping.</li>
-        <li>The 3rd wheel: commonly a ball caster or ball bearing / marble. Could be any wheel. Have to 3d print that ball holder, or go right for a ball caster.</li>
-        <li>Cut from wood. Acrylic is shiny, but prone to cracking. Wood is much easier to modify.</li>
+        <li>The 3rd wheel: commonly a ball bearing; I've used a marble. But you could use anything wheel-like - such as a Lego wheel. You'll have to 3d print that ball bearing holder, or purchase some ball casters from the hardware store.</li>
+        <li>Use wood if you can. Acrylic is shiny, but prone to cracking; cardboard is great for prototyping, but not so sturdy. Wood provides a nice balance between foundation and hackability.</li>
       </ul>
 
       <h2 id="construction">Construction</h2>
-
-      <p>Tips:</p>
-      <ul>
-        <li>You don't need to spend $$ prototyping. Use cardboard, coroplast (lawn signs), Popsicle sticks and duct tape.</li>
-        <li>Using a medium to large screwdriver for more torque.</li>
-        <li>Protect your work surface and add a bit of grip by working on cardboard or a rubber mat.</li>
-      </ul>
 
       <ol>
         <li>
@@ -134,11 +139,11 @@
           <img src="images/2014-12-07 14.57.26.jpg" alt="" />
         </li>
         <li>
-          <p>Wind the zipties back up through the bottom of the chassis, around the servos, and back through the locktabs. Tighten them. Now their tails stick out the back of the bot with the servo wires.</p>
+          <p>Wind the zipties back up through the bottom of the chassis, around the servos, and back through the locktabs. Tighten them. Now their tails stick out the back of the bot along with the servo wires. (Think about how you can decorate these when your bot is done.)</p>
           <img src="images/2014-12-07 14.58.53.jpg" alt="" />
         </li>
         <li>
-          <p>Instead of cutting wires and soldering, we'll use jumper wires to connect the servos to the Arduino board. Get 6 small to medium jumper wires; 2 each of white, black and red is easiest to understand, but I was out of red wires in the picture.</p>
+          <p>Instead of cutting wires and soldering, we'll use jumper wires to connect the servos to the Arduino board. Get 6 small to medium jumper wires; 2 each of white, black and red is a nice convention, but all wires work the same. I was out of red wires, so I used orange ones.</p>
           <img src="images/2014-12-07 14.51.17.jpg" alt="" />
         </li>
         <li>Put the breadboard onto your sumobot.</li>
@@ -159,8 +164,8 @@
         <li>For each servo, connect it to power (red), ground (black), and send the signal (white) to pins 10 and 11.</li>
         <li>Snap the wheels onto the bot.</li>
         <li>Plug the Arduino into your computer via USB.</li>
-        <li>At this point the bot is on and waiting for instructions. If the wheels are moving, adjust the small dials on the back of the servos until they stop.</li>
-        <li>Run the Sumobot software and use your arrow keys to control it.</li>
+        <li>At this point the bot should be powered on and waiting for instructions from the computer. If the wheels are moving, adjust the small dials on the back of the servos until they stop.</li>
+        <li>Run the <a href="https://github.com/makenai/sumobot-jr#sample-code">Sumobot software</a> and use your arrow keys to control it.</li>
         <li>You're done! Enjoy your new robot!</li>
       </ol>
 
@@ -205,7 +210,7 @@
             <li><a href="http://www.thingiverse.com/thing:273520">http://www.thingiverse.com/thing:273520</a></li>
           </ul>
         </li>
-        <li>Wall Avoiding Robot: <a href="http://www.instructables.com/id/Make-a-wall-avoiding-Robot!/?ALLSTEPS"></a></li>
+        <li>Wall Avoiding Robot: <a href="http://www.instructables.com/id/Make-a-wall-avoiding-Robot!/?ALLSTEPS">http://www.instructables.com/id/Make-a-wall-avoiding-Robot!/?ALLSTEPS</a></li>
         <li>Hexy - open source hexapod: <a href="https://github.com/ArcBotics/Hexy">https://github.com/ArcBotics/Hexy</a></li>
         <li>Kitty Paparazzo - Sumobot chassis hacked to tack pictures of cats: <a href="https://github.com/lynnaloo/kitty-paparazzi/issues/1">https://github.com/lynnaloo/kitty-paparazzi/issues/1</a></li>
         <li>Mirobot - laser cut and make a robot: <a href="http://mirobot.io/build/fabricate/">http://mirobot.io/build/fabricate/</a></li>
