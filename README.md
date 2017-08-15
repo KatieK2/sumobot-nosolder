@@ -1,4 +1,4 @@
-#Building Sumobot Jr., No Soldering
+# Building Sumobot Jr., No Soldering
 
 Build instructions for [Sumobot Jr.](https://github.com/makenai/sumobot-jr), with no soldering required.
 
